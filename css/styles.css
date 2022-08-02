@@ -15,12 +15,12 @@
 
 /* Document */
 body {
-    min-height: 100vh;
     background: #CCC;
     font: 16px 'Verdana', 'Helvetica', sans-serif;
 }
 
 .container {
+    min-height: 100vh;
     display: grid;
     grid: [row1-start] "sidebar header" 1fr [row1-end]
           [row2-start] "sidebar main"   5fr [row2-end]
@@ -33,7 +33,6 @@ body {
 
 .sidebar {
     grid-area: sidebar;
-    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: start;
