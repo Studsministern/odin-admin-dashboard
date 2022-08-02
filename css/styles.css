@@ -1,9 +1,10 @@
 /* Variables */
 :root {
-    --font-size-large: 1.5rem;
-    --font-size-medium: 1rem;
-    --font-size-small: 0.6rem;
-    --font-size-tiny: 0.4rem;
+    --font-size-huge: 1.5rem;
+    --font-size-large: 1rem;
+    --font-size-medium: .9rem;
+    --font-size-small: .6rem;
+    --font-size-tiny: .4rem;
 
     --color-white: #FFF;
     --color-gray: #DDD;
@@ -34,8 +35,48 @@ body {
           /               1fr    4fr;
 }
 
-.header {
+header {
     grid-area: header;
+    display: flex;
+    flex-direction: column;
+    background: var(--color-white);
+    font-size: var(--font-size-medium);
+    font-weight: 600;
+}
+
+header > div {
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+label {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    padding-right: 3rem;
+}
+
+#search-bar {
+    flex: 1;
+}
+
+.header-top p {
+    align-self: center;
+}
+
+.header-bottom > * {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.greeting-text p {
+    font-size: var(--font-size-small);
+}
+
+.greeting-text h1 {
+    font-size: var(--font-size-large);
 }
 
 .sidebar {
@@ -55,12 +96,7 @@ body {
     align-items: center;
     gap: .5rem;
     padding: 0 1rem 0 .5rem;
-    font-size: var(--font-size-large);
-}
-
-.logo {
-    width: 3rem;
-    height: 3rem;
+    font-size: var(--font-size-huge);
 }
 
 .sidebar a {
@@ -69,7 +105,7 @@ body {
     align-items: center;
     gap: 1rem;
     padding: 0.2rem 1rem;
-    font-size: var(--font-size-medium);
+    font-size: var(--font-size-large);
 }
 
 .main-content {
@@ -77,9 +113,16 @@ body {
 }
 
 /* Common */
-.icon {
+.icon, 
+.profile-icon {
     width: 2rem;
     height: 2rem;
+}
+
+.logo,
+.user-greeting .profile-icon {
+    width: 3rem;
+    height: 3rem;
 }
 
 /* Elements */
