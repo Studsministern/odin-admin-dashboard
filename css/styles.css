@@ -1,6 +1,9 @@
 /* Variables */
 :root {
-
+    --font-size-large: 1.5rem;
+    --font-size-medium: 1rem;
+    --font-size-small: 0.6rem;
+    --font-size-tiny: 0.4rem;
 }
 
 /* General */
@@ -48,7 +51,7 @@ body {
     align-items: center;
     gap: .5rem;
     padding: 0 1rem 0 .5rem;
-    font-size: 1.5rem;
+    font-size: var(--font-size-large);
 }
 
 .logo {
@@ -62,7 +65,7 @@ body {
     align-items: center;
     gap: 1rem;
     padding: 0.2rem 1rem;
-    font-size: 1rem;
+    font-size: var(--font-size-medium);
 }
 
 .main-content {
@@ -86,5 +89,5 @@ ul {
 }
 
 img {
-    font-size: 0.4rem;
+    font-size: var(--font-size-tiny);
 }
