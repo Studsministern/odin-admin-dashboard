@@ -4,6 +4,10 @@
     --font-size-medium: 1rem;
     --font-size-small: 0.6rem;
     --font-size-tiny: 0.4rem;
+
+    --color-white: #FFF;
+    --color-gray: #DDD;
+    --color-blue: rgb(54, 158, 255);
 }
 
 /* General */
@@ -18,7 +22,7 @@
 
 /* Document */
 body {
-    background: #CCC;
+    background: var(--color-gray);
     font: 16px 'Verdana', 'Helvetica', sans-serif;
 }
 
@@ -41,8 +45,8 @@ body {
     justify-content: start;
     gap: 2rem;
     padding: 1rem 0;
-    background: rgb(54, 158, 255);
-    color: #FFF;
+    background: var(--color-blue);
+    color: var(--color-white);
     font-weight: bold;
 }
 
@@ -81,7 +85,6 @@ body {
 /* Elements */
 a {
     text-decoration: none;
-    color: inherit;
 }
 
 ul {
