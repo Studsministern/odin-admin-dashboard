@@ -40,7 +40,6 @@ header {
     display: flex;
     flex-direction: column;
     background: var(--color-white);
-    font-weight: 600;
 }
 
 header > div {
@@ -68,6 +67,7 @@ label {
     display: flex;
     align-items: center;
     gap: 1rem;
+    font-weight: 600;
 }
 
 .sidebar {
@@ -79,7 +79,6 @@ label {
     padding: 1rem 0;
     background: var(--color-blue);
     color: var(--color-white);
-    font-weight: bold;
 }
 
 .logo-div {
@@ -118,14 +117,17 @@ label {
 /* Elements */
 h1 {
     font-size: var(--font-size-large);
+    font-weight: bold;
 }
 
 h2 {
     font-size: var(--font-size-medium);
+    font-weight: bold;
 }
 
 h3 {
     font-size: var(--font-size-small);
+    font-weight: bold;
 }
 
 p {
