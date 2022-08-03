@@ -3,8 +3,8 @@
     --font-size-huge: 1.5rem;
     --font-size-large: 1rem;
     --font-size-medium: .9rem;
-    --font-size-small: .6rem;
-    --font-size-tiny: .4rem;
+    --font-size-small: .7rem;
+    --font-size-tiny: .5rem;
 
     --color-white: #FFF;
     --color-gray: #DDD;
@@ -40,7 +40,6 @@ header {
     display: flex;
     flex-direction: column;
     background: var(--color-white);
-    font-size: var(--font-size-medium);
     font-weight: 600;
 }
 
@@ -71,14 +70,6 @@ label {
     gap: 1rem;
 }
 
-.greeting-text p {
-    font-size: var(--font-size-small);
-}
-
-.greeting-text h1 {
-    font-size: var(--font-size-large);
-}
-
 .sidebar {
     grid-area: sidebar;
     display: flex;
@@ -105,7 +96,6 @@ label {
     align-items: center;
     gap: 1rem;
     padding: 0.2rem 1rem;
-    font-size: var(--font-size-large);
 }
 
 .main-content {
@@ -126,6 +116,22 @@ label {
 }
 
 /* Elements */
+h1 {
+    font-size: var(--font-size-large);
+}
+
+h2 {
+    font-size: var(--font-size-medium);
+}
+
+h3 {
+    font-size: var(--font-size-small);
+}
+
+p {
+    font-size: var(--font-size-tiny);
+}
+
 a {
     text-decoration: none;
 }
