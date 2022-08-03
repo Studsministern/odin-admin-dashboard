@@ -7,9 +7,12 @@
     --font-size-tiny: .5rem;
 
     --color-white: #FFF;
+    --color-white-hover: rgb(248, 252, 253);
     --font-color-gray: rgb(75, 78, 82);
     --bg-color-gray: rgb(218, 227, 235);
-    --color-blue: rgb(54, 158, 255);
+    --bg-color-blue: rgb(54, 158, 255);
+    --bg-color-blue-hover: rgb(81, 170, 254);
+    --bg-color-blue-active: rgb(121, 190, 255);
 }
 
 /* Global reset */
@@ -73,6 +76,14 @@ label {
     font-weight: 600;
 }
 
+.modifier-buttons button {
+    padding: .5rem 1rem;
+    background: var(--bg-color-blue);
+    color: var(--color-white);
+    border: none;
+    border-radius: 1rem;
+}
+
 /* Sidebar */
 .sidebar {
     grid-area: sidebar;
@@ -81,7 +92,7 @@ label {
     justify-content: start;
     gap: 2rem;
     padding: 1rem 0;
-    background: var(--color-blue);
+    background: var(--bg-color-blue);
     color: var(--color-white);
 }
 
@@ -222,6 +233,52 @@ label {
     height: 3rem;
 }
 
+/* Transitions */
+.modifier-buttons button,
+.sidebar a h1,
+.main-content a {
+    transition: all 0.1s;
+}
+
+/* Hover and active background effects */
+.modifier-buttons button:hover,
+.sidebar a:hover {
+    background: var(--bg-color-blue-hover);
+}
+
+.modifier-buttons button:active,
+.sidebar a:active {
+    background: var(--bg-color-blue-active);
+}
+
+.main-content .projects a:active {
+    background-color: var(--color-white-hover);
+    transition: background 0.3s;
+}
+
+/* Hover and active transform effects */
+.modifier-buttons button:hover {
+    transform: scale(1.03);
+    transition: all 0.1s;
+}
+
+.sidebar a:hover h1 {
+    transform: scale(1.04);
+    transition: all 0.1s;
+}
+
+.main-content a:hover {
+    transform: scale(1.01);
+    transition: all 0.1s;
+}
+
+.sidebar a:active h1,
+.modifier-buttons button:active,
+.main-content a:active {
+    transform: scale(1);
+    transition: all 0.1s;
+}
+
 /* Elements */
 h1 {
     font-size: var(--font-size-large);
@@ -252,4 +309,8 @@ ul {
 
 img {
     font-size: var(--font-size-tiny);
+}
+
+button {
+    cursor: pointer;
 }
