@@ -7,7 +7,7 @@
     --font-size-tiny: .5rem;
 
     --color-white: #FFF;
-    --font-color-gray: rgb(96, 100, 104);
+    --font-color-gray: rgb(75, 78, 82);
     --bg-color-gray: rgb(218, 227, 235);
     --color-blue: rgb(54, 158, 255);
 }
@@ -61,7 +61,8 @@ label {
     flex: 1;
 }
 
-.header-top p {
+.header-top p,
+.header-top h2 {
     align-self: center;
 }
 
