@@ -157,6 +157,10 @@ label {
     grid-area: trending;
 }
 
+.trending a {
+    display: flex;
+}
+
 .project-div,
 .announcements,
 .trending {
@@ -203,10 +207,6 @@ label {
 .announcements p,
 .author-project {
     color: var(--font-color-gray);
-}
-
-.trending a {
-    display: flex;
 }
 
 /* Icon sizing */
