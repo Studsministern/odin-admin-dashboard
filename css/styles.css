@@ -165,8 +165,6 @@ label {
 .project-div a,
 .main-content ul {
     flex: 1;
-    display: grid;
-    grid-template-columns: 1fr;
     gap: .5rem;
     align-items: flex-start;
     justify-content: start;
@@ -175,8 +173,20 @@ label {
     padding: 1rem;
 }
 
+.project-div a {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.main-content ul {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden scroll;
+}
+
 .main-content li {
     display: flex;
+    min-height: 20%;
 }
 
 .main-content li a {
@@ -186,6 +196,10 @@ label {
 .project-div p,
 .trending p {
     font-size: var(--font-size-small);
+}
+
+.trending a {
+    display: flex;
 }
 
 /* Icon sizing */
