@@ -7,7 +7,8 @@
     --font-size-tiny: .5rem;
 
     --color-white: #FFF;
-    --color-gray: rgb(218, 227, 235);
+    --font-color-gray: rgb(96, 100, 104);
+    --bg-color-gray: rgb(218, 227, 235);
     --color-blue: rgb(54, 158, 255);
 }
 
@@ -23,7 +24,7 @@
 
 /* Document */
 body {
-    background: var(--color-gray);
+    background: var(--bg-color-gray);
     font: 16px 'Verdana', 'Helvetica', sans-serif;
 }
 
@@ -196,6 +197,11 @@ label {
 .project-div p,
 .trending p {
     font-size: var(--font-size-small);
+}
+
+.announcements p,
+.author-project {
+    color: var(--font-color-gray);
 }
 
 .trending a {
