@@ -11,7 +11,7 @@
     --color-blue: rgb(54, 158, 255);
 }
 
-/* General */
+/* Global reset */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -35,6 +35,7 @@ body {
           /               1fr    4fr;
 }
 
+/* Header */
 header {
     grid-area: header;
     display: flex;
@@ -70,6 +71,7 @@ label {
     font-weight: 600;
 }
 
+/* Sidebar */
 .sidebar {
     grid-area: sidebar;
     display: flex;
@@ -97,6 +99,7 @@ label {
     padding: 0.2rem 1rem;
 }
 
+/* Main content */
 .main-content {
     grid-area: main;
     display: grid;
@@ -185,7 +188,7 @@ label {
     font-size: var(--font-size-small);
 }
 
-/* Common */
+/* Icon sizing */
 .icon, 
 .profile-icon {
     width: 2rem;
