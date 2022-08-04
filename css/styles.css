@@ -6,13 +6,27 @@
     --font-size-small: .7rem;
     --font-size-tiny: .5rem;
 
-    --color-white: #FFF;
-    --color-white-hover: rgb(248, 252, 253);
-    --font-color-gray: rgb(75, 78, 82);
-    --bg-color-gray: rgb(218, 227, 235);
-    --bg-color-blue: rgb(54, 158, 255);
-    --bg-color-blue-hover: rgb(81, 170, 254);
-    --bg-color-blue-active: rgb(121, 190, 255);
+    --color-sky-50: #ecfeff;
+    --color-sky-100: #cffafe;
+    --color-sky-200: #a5f3fc;
+    --color-sky-300: #67e8f9;
+    --color-sky-400: #22d3ee;
+    --color-sky-500: #06b6d4;
+    --color-sky-600: #0891b2;
+    --color-sky-700: #0e7490;
+    --color-sky-800: #155e75;
+    --color-sky-900: #164e63;
+
+    --color-main: #fdfff7;
+    --color-main-hover: #eef2ff;
+    --color-secondary: #031115;
+    --bg-color-main: #dae7e8;
+    --bg-color-secondary: #099bc0;
+    --bg-color-secondary-hover: #0aa4ca;
+    --bg-color-secondary-active: #0caad1;
+
+    /* Filter that can be used to convert black icons to the --color-sky-900 color */
+    /* filter: invert(45%) sepia(80%) saturate(4520%) hue-rotate(167deg) brightness(102%) contrast(93%); */
 }
 
 /* Global reset */
@@ -27,8 +41,9 @@
 
 /* Document */
 body {
-    background: var(--bg-color-gray);
+    background: var(--bg-color-main);
     font: 16px 'Verdana', 'Helvetica', sans-serif;
+    color: var(--color-secondary);
 }
 
 .container {
@@ -44,7 +59,7 @@ header {
     grid-area: header;
     display: flex;
     flex-direction: column;
-    background: var(--color-white);
+    background: var(--color-main);
 }
 
 header > div {
@@ -65,7 +80,7 @@ label {
 }
 
 .notification-button {
-    background: url(../img/icons/notifications_FILL1_wght500_GRAD0_opsz40.svg);
+    background: url(../img/icons/notifications_active_FILL0_wght500_GRAD0_opsz40.svg);
     border: none;
 }
 
@@ -83,8 +98,8 @@ label {
 
 .modifier-buttons button {
     padding: .5rem 1rem;
-    background: var(--bg-color-blue);
-    color: var(--color-white);
+    background: var(--bg-color-secondary);
+    color: var(--color-main);
     border: none;
     border-radius: 1rem;
 }
@@ -97,8 +112,8 @@ label {
     justify-content: start;
     gap: 2rem;
     padding: 1rem 0;
-    background: var(--bg-color-blue);
-    color: var(--color-white);
+    background: var(--bg-color-secondary);
+    color: var(--color-main);
 }
 
 .logo-div {
@@ -115,6 +130,10 @@ label {
     align-items: center;
     gap: 1rem;
     padding: 0.2rem 1rem;
+}
+
+.sidebar .icon {
+    filter: invert(97%) sepia(9%) saturate(231%) hue-rotate(45deg) brightness(101%) contrast(106%);
 }
 
 /* Main content */
@@ -207,7 +226,7 @@ label {
     align-items: flex-start;
     justify-content: start;
     border-radius: .5rem;
-    background: var(--color-white);
+    background: var(--color-main);
     padding: 1rem;
 }
 
@@ -238,7 +257,7 @@ label {
 
 .announcements p,
 .author-project {
-    color: var(--font-color-gray);
+    color: var(--color-secondary);
 }
 
 /* Icon sizing */
@@ -265,16 +284,16 @@ label {
 /* Hover and active background effects */
 .modifier-buttons button:hover,
 .sidebar a:hover {
-    background: var(--bg-color-blue-hover);
+    background: var(--bg-color-secondary-hover);
 }
 
 .modifier-buttons button:active,
 .sidebar a:active {
-    background: var(--bg-color-blue-active);
+    background: var(--bg-color-secondary-active);
 }
 
 .main-content .projects a:active {
-    background-color: var(--color-white-hover);
+    background-color: var(--color-main-hover);
     transition: background 0.3s;
 }
 
