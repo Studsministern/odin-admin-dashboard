@@ -64,6 +64,11 @@ label {
     flex: 1;
 }
 
+.notification-button {
+    background: url(../img/icons/notifications_FILL1_wght500_GRAD0_opsz40.svg);
+    border: none;
+}
+
 .header-top p,
 .header-top h2 {
     align-self: center;
@@ -160,6 +165,22 @@ label {
     justify-self: flex-end;
 }
 
+.project-buttons button {
+    border: none;
+}
+
+.star-button {
+    background: url(../img/icons/grade_FILL0_wght500_GRAD0_opsz40.svg);
+}
+
+.watch-later-button {
+    background: url(../img/icons/playlist_add_FILL1_wght500_GRAD0_opsz40.svg);
+}
+
+.share-button {
+    background: url(../img/icons/share_FILL0_wght500_GRAD0_opsz40.svg);
+}
+
 .announcements {
     grid-area: announcements;
 }
@@ -223,8 +244,9 @@ label {
 /* Icon sizing */
 .icon, 
 .profile-icon {
-    width: 2rem;
-    height: 2rem;
+    width: 1.7rem;
+    height: 1.7rem;
+    background-size: 1.7rem;
 }
 
 .logo,
