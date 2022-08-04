@@ -85,6 +85,14 @@ label {
 
 #search-bar {
     flex: 1;
+    background: var(--bg-color-main);
+    padding: 0 var(--distance-medium);
+    border: none;
+    border-radius: var(--distance-large);
+}
+
+#search-bar:focus {
+    outline: none;
 }
 
 .notification-button {
