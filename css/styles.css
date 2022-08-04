@@ -1,16 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
 /* Variables */
 :root {
     --distance-huge: 3rem;
     --distance-large: 2rem;
     --distance-medium: 1rem;
     --distance-small: .5rem;
-    --distance-tiny: .2rem;
+    --distance-tiny: .15rem;
     
-    --font-size-huge: 1.5rem;
-    --font-size-large: 1rem;
-    --font-size-medium: .9rem;
-    --font-size-small: .7rem;
-    --font-size-tiny: .5rem;
+    --font-size-huge: 2rem;
+    --font-size-large: 1.2rem;
+    --font-size-medium: 1rem;
+    --font-size-small: .8rem;
+    --font-size-tiny: .6rem;
 
     --color-sky-50: #ecfeff;
     --color-sky-100: #cffafe;
@@ -48,7 +50,7 @@
 /* Document */
 body {
     background: var(--bg-color-main);
-    font: 16px 'Verdana', 'Helvetica', sans-serif;
+    font: 16px 'Roboto', 'Verdana', 'Helvetica', sans-serif;
     color: var(--color-secondary);
 }
 
@@ -84,6 +86,7 @@ label {
 }
 
 #search-bar {
+    height: 100%;
     flex: 1;
     background: var(--bg-color-main);
     padding: 0 var(--distance-medium);
@@ -109,7 +112,11 @@ label {
     display: flex;
     align-items: center;
     gap: var(--distance-medium);
-    font-weight: 600;
+    font-weight: bold;
+}
+
+.header-bottom p {
+    padding-bottom: var(--distance-tiny);
 }
 
 .modifier-buttons button {
@@ -137,6 +144,9 @@ label {
     align-items: center;
     gap: var(--distance-small);
     padding: 0 var(--distance-medium) 0 var(--distance-small);
+}
+
+.logo-div h1 {
     font-size: var(--font-size-huge);
 }
 
@@ -274,6 +284,7 @@ label {
 .announcements p,
 .author-project {
     color: var(--color-secondary);
+    padding-top: var(--distance-tiny);
 }
 
 /* Icon sizing */
@@ -339,17 +350,17 @@ label {
 /* Elements */
 h1 {
     font-size: var(--font-size-large);
-    font-weight: bold;
+    font-weight: 700;
 }
 
 h2 {
     font-size: var(--font-size-medium);
-    font-weight: bold;
+    font-weight: 700;
 }
 
 h3 {
     font-size: var(--font-size-small);
-    font-weight: bold;
+    font-weight: 500;
 }
 
 p {
