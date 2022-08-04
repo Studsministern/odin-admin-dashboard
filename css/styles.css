@@ -25,10 +25,13 @@
     --color-sky-800: #155e75;
     --color-sky-900: #164e63;
 
-    --color-main: #fdfff7;
-    --color-main-hover: #eef2ff;
+    --color-main: #fffdf7;
+    --color-main-hover: #f7feff;
+    --color-main-active: #eef8f9;
     --color-secondary: #031115;
+
     --bg-color-main: #dae7e8;
+
     --bg-color-secondary: #099bc0;
     --bg-color-secondary-hover: #0aa4ca;
     --bg-color-secondary-active: #0caad1;
@@ -308,10 +311,10 @@ label {
     transition: all 0.1s;
 }
 
-/* Hover and active background effects */
-.modifier-buttons button:hover,
+/* Hover and active effects */
 .sidebar a:hover {
     background: var(--bg-color-secondary-hover);
+    border-left: 4px solid var(--color-main);
 }
 
 .modifier-buttons button:active,
@@ -319,30 +322,23 @@ label {
     background: var(--bg-color-secondary-active);
 }
 
+.main-content .projects a:hover {
+    background: var(--color-main-hover);
+    border-left: 4px solid var(--bg-color-secondary);
+}
+
 .main-content .projects a:active {
-    background-color: var(--color-main-hover);
-    transition: background 0.3s;
+    background: var(--color-main-active);
 }
 
 /* Hover and active transform effects */
 .modifier-buttons button:hover {
+    background: var(--bg-color-secondary-hover);
     transform: scale(1.03);
     transition: all 0.1s;
 }
 
-.sidebar a:hover h1 {
-    transform: scale(1.04);
-    transition: all 0.1s;
-}
-
-.main-content a:hover {
-    transform: scale(1.01);
-    transition: all 0.1s;
-}
-
-.sidebar a:active h1,
-.modifier-buttons button:active,
-.main-content a:active {
+.modifier-buttons button:active {
     transform: scale(1);
     transition: all 0.1s;
 }
