@@ -211,6 +211,8 @@ label {
 .project-buttons {
     align-self: flex-end;
     justify-self: flex-end;
+    display: flex;
+    gap: var(--distance-small);
 }
 
 .project-buttons button {
@@ -262,6 +264,7 @@ label {
 .project-div a {
     display: grid;
     grid-template-columns: 1fr;
+    border-left: 0px solid var(--bg-color-secondary);
 }
 
 .main-content ul {
@@ -305,16 +308,22 @@ label {
 }
 
 /* Transitions */
-.modifier-buttons button,
-.sidebar a h1,
-.main-content a {
-    transition: all 0.1s;
+.main-content .projects a {
+    transition: all .1s;
+    -webkit-transition: all .1s;
+}
+
+.sidebar a {
+    transition: all .5s;
+    -webkit-transition: all .5s;
 }
 
 /* Hover and active effects */
 .sidebar a:hover {
     background: var(--bg-color-secondary-hover);
     border-left: 4px solid var(--color-main);
+    transition: all .1s;
+    -webkit-transition: all .1s;
 }
 
 .modifier-buttons button:active,
@@ -325,6 +334,8 @@ label {
 .main-content .projects a:hover {
     background: var(--color-main-hover);
     border-left: 4px solid var(--bg-color-secondary);
+    transition: all .1s;
+    -webkit-transition: all .1s;
 }
 
 .main-content .projects a:active {
@@ -335,12 +346,10 @@ label {
 .modifier-buttons button:hover {
     background: var(--bg-color-secondary-hover);
     transform: scale(1.03);
-    transition: all 0.1s;
 }
 
 .modifier-buttons button:active {
     transform: scale(1);
-    transition: all 0.1s;
 }
 
 /* Elements */
