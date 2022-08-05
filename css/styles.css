@@ -35,9 +35,6 @@
     --bg-color-secondary: #099bc0;
     --bg-color-secondary-hover: #0aa4ca;
     --bg-color-secondary-active: #0caad1;
-
-    /* Filter that can be used to convert black icons to the --color-sky-900 color */
-    /* filter: invert(45%) sepia(80%) saturate(4520%) hue-rotate(167deg) brightness(102%) contrast(93%); */
 }
 
 /* Global reset */
@@ -223,8 +220,18 @@ label {
     background: url(../img/icons/grade_FILL0_wght500_GRAD0_opsz40.svg);
 }
 
+.star-button.toggled {
+    background: url(../img/icons/grade_FILL1_wght500_GRAD0_opsz40.svg);
+    filter: invert(72%) sepia(65%) saturate(1348%) hue-rotate(10deg) brightness(106%) contrast(104%); /* Corresponds to #f1d900 */
+}
+
 .watch-later-button {
     background: url(../img/icons/playlist_add_FILL1_wght500_GRAD0_opsz40.svg);
+}
+
+.watch-later-button.toggled {
+    background: url(../img/icons/playlist_add_check_FILL0_wght500_GRAD0_opsz40.svg);
+    filter: invert(45%) sepia(80%) saturate(4520%) hue-rotate(167deg) brightness(102%) contrast(93%); /* Corresponds to --color-sky-900: #164e63 */
 }
 
 .share-button {
@@ -295,7 +302,9 @@ label {
 
 /* Icon sizing */
 .icon, 
-.profile-icon {
+.profile-icon,
+.star-button.toggled,
+.watch-later-button.toggled {
     width: 1.7rem;
     height: 1.7rem;
     background-size: 1.7rem;
@@ -316,6 +325,11 @@ label {
 .sidebar a {
     transition: all .5s;
     -webkit-transition: all .5s;
+}
+
+.project-buttons button {
+    transition: all .1s;
+    -webkit-transition: all .1s;
 }
 
 /* Hover and active effects */
@@ -350,6 +364,16 @@ label {
 
 .modifier-buttons button:active {
     transform: scale(1);
+}
+
+.project-buttons button:hover {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+}
+
+.project-buttons button:active {
+    transform: scale(1);
+    -webkit-transform: scale(1);
 }
 
 /* Elements */
