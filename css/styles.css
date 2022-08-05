@@ -38,7 +38,7 @@
     --color-main: #fffdf7;
     --color-main-hover: #f7feff;
     --color-main-active: #eef8f9;
-    --color-secondary: #031115;
+    --color-secondary: #6e6e6e;
 
     --bg-color-main: #dae7e8;
 
@@ -81,7 +81,6 @@
 body {
     background: var(--bg-color-main);
     font: 16px 'Roboto', 'Verdana', 'Helvetica', sans-serif;
-    color: var(--color-secondary);
 }
 
 .container {
@@ -292,7 +291,8 @@ label {
 }
 
 .project p {
-    font-size: var(--font-size-small);
+    font-size: var(--font-size-medium);
+    color: var(--color-secondary);
 }
 
 .project-buttons {
@@ -415,7 +415,7 @@ h3 {
 }
 
 p {
-    font-size: var(--font-size-tiny);
+    font-size: var(--font-size-small);
 }
 
 a {
