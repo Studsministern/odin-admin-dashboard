@@ -86,8 +86,8 @@ body {
 .container {
     min-height: 100vh;
     display: grid;
-    grid: [row1-start] "sidebar header" 1fr [row1-end]
-          [row2-start] "sidebar main"   5fr [row2-end]
+    grid: [row1-start] "sidebar header" auto [row1-end]
+          [row2-start] "sidebar main"   auto [row2-end]
           /               1fr    4fr;
 }
 
