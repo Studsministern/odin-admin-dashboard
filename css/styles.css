@@ -231,9 +231,10 @@ label {
     grid-area: main;
     display: grid;
     grid: "projects-header announcements-header" var(--distance-large) 
-          "projects        announcements"        1fr 
+          "projects        announcements"        minmax(auto, 350px)
           "projects        trending-header"      var(--distance-large)
-          "projects        trending"             1fr 
+          "projects        trending"             minmax(auto, 350px)
+          "projects        ."                    auto
           ".               ."                    var(--distance-large)
           /  3fr                1fr;
     column-gap: var(--distance-medium);
@@ -265,11 +266,15 @@ label {
     column-gap: var(--distance-medium);
 }
 
+.project {
+    position: relative;
+}
+
 .project a {
     flex: 1;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: auto 1fr auto;
+    grid-template-rows: auto 1fr var(--distance-large);
     gap: var(--distance-small);
     align-items: flex-start;
     justify-content: start;
@@ -296,8 +301,9 @@ label {
 }
 
 .project-buttons {
-    align-self: flex-end;
-    justify-self: flex-end;
+    position: absolute;
+    bottom: var(--distance-medium);
+    right: var(--distance-medium);
     display: flex;
     gap: var(--distance-small);
 }
