@@ -220,7 +220,8 @@ label {
     background: var(--bg-color-secondary-active);
 }
 
-.sidebar .icon {
+.sidebar .icon,
+.sidebar .logo {
     filter: invert(97%) sepia(9%) saturate(231%) hue-rotate(45deg) brightness(101%) contrast(106%); /* Change from black to --color-main: #fffdf7 */
 }
 
@@ -391,6 +392,7 @@ label {
 
 .trending a {
     display: flex;
+    gap: var(--distance-small);
     align-items: center;
 }
 
@@ -443,6 +445,7 @@ img {
     width: 1.7rem;
     height: 1.7rem;
     background-size: 1.7rem;
+    border-radius: 1.7rem;
 }
 
 .logo,
