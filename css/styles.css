@@ -140,6 +140,18 @@ label {
     animation: shake 60s 2s infinite;
 }
 
+@keyframes shake {
+    0%, .25%, 5%, .75%, 1%, 100% {
+        transform: rotate(0deg);
+    }
+    .125%, .625% {
+        transform: rotate(10deg);
+    }
+    .375%, .875% {
+        transform: rotate(-10deg);
+    }
+}
+
 .notification-text {
     position: absolute;
     top: -.1rem;
@@ -152,18 +164,6 @@ label {
     text-align: center;
     background: #ff4242;
     border-radius: var(--font-size-small);
-}
-
-@keyframes shake {
-    0%, .25%, 5%, .75%, 1%, 100% {
-        transform: rotate(0deg);
-    }
-    .125%, .625% {
-        transform: rotate(10deg);
-    }
-    .375%, .875% {
-        transform: rotate(-10deg);
-    }
 }
 
 .header-top a {
