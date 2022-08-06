@@ -137,7 +137,7 @@ label {
 .notification-button {
     background: url(../img/icons/notifications_active_FILL0_wght500_GRAD0_opsz40.svg);
     border: none;
-    position: relative;
+    animation: shake 60s 2s infinite;
 }
 
 .notification-text {
@@ -152,6 +152,18 @@ label {
     text-align: center;
     background: #ff4242;
     border-radius: var(--font-size-small);
+}
+
+@keyframes shake {
+    0%, .25%, 5%, .75%, 1%, 100% {
+        transform: rotate(0deg);
+    }
+    .125%, .625% {
+        transform: rotate(10deg);
+    }
+    .375%, .875% {
+        transform: rotate(-10deg);
+    }
 }
 
 .header-top p,
