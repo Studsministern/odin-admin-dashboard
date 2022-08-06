@@ -133,6 +133,22 @@ label {
 .notification-button {
     background: url(../img/icons/notifications_active_FILL0_wght500_GRAD0_opsz40.svg);
     border: none;
+    position: relative;
+}
+
+.notification-button::after {
+    display: block;
+    content: "1";
+    position: absolute;
+    top: -.1rem;
+    right: -.1rem;
+    height: var(--font-size-small);
+    width: var(--font-size-small);
+    font-size: .7rem;
+    color: var(--color-main);
+    font-weight: bold;
+    background: #ff4242;
+    border-radius: var(--font-size-small);
 }
 
 .header-top p,
