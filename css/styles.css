@@ -227,26 +227,26 @@ label {
 }
 
 /* Links */
-.sidebar a {
+.sidebar .navigation a {
     flex: 1;
     display: flex;
     align-items: center;
     gap: var(--distance-medium);
     padding: var(--distance-small) var(--distance-medium);
     
-    transition: all .5s;
-    -webkit-transition: all .5s;
+    transition: background border .5s;
+    -webkit-transition: background border .5s;
 }
 
-.sidebar a:hover {
+.sidebar .navigation a:hover {
     background: var(--bg-color-secondary-hover);
     border-left: 4px solid var(--color-main);
     
-    transition: all .1s;
-    -webkit-transition: all .1s;
+    transition: background border .1s;
+    -webkit-transition: background border .1s;
 }
 
-.sidebar a:active {
+.sidebar .navigation a:active {
     background: var(--bg-color-secondary-active);
 }
 
