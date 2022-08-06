@@ -166,8 +166,7 @@ label {
     }
 }
 
-.header-top p,
-.header-top h2 {
+.header-top a {
     align-self: center;
 }
 
